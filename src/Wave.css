@@ -1,0 +1,14 @@
+.wave {
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.wave-fill {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 20px;
+}

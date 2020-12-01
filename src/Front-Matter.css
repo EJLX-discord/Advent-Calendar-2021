@@ -1,0 +1,23 @@
+.front-page {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.front-page-title {
+  font-size: 4.5rem;
+  color: white;
+  width: 95%;
+  text-align: center;
+  line-height: 4.5rem;
+  margin: 0 auto;
+  color: #FFFFFF;
+}
+
+.front-page-calendar {
+  padding-top: 50px;
+  max-width: 1000px;
+  width: 95%;
+  margin: 0 auto;
+}
