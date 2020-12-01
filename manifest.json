@@ -1,7 +1,7 @@
 {
-  "name": "app",
-  "short_name": "app",
-  "start_url": "/",
+  "name": "EJLX Advent Calendar 2020",
+  "short_name": "EJLX AC 2020",
+  "start_url": "Advent-Calendar-2020/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",

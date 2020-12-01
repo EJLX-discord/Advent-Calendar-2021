@@ -5,7 +5,6 @@ export default function BackToTopButton () {
   const button = useRef(null)
   useEffect(() => {
     button.current.addEventListener('click', (e) => {
-      console.log(e)
       window.scroll(0, 0)
     })
   }, [])
