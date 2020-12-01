@@ -3,11 +3,11 @@ import './Entry.css'
 export default function Entry (props) {
   const {
     icon,
-    alias = 'Anonymous',
     username = 'Anonymous',
     date = 'Unknown Date',
     entry = 'No entry...'
   } = props
+  const alias = props.alias || username || 'Anonymous'
   return (
     <div className={'entry'}>
       <div className={'entry-titlebar'}>
