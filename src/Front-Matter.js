@@ -7,7 +7,7 @@ export default function FrontMatter () {
   const height = Math.max(window.innerHeight, 850)
   return (
     <>
-      <Wave color={'#183446'} height={-100} priority={1}/>
+      <Wave color={'#1f4259'} height={-100} priority={1}/>
       <Wave color={'#046e8f'} height={-100 + height / 4 * 1.15} priority={2}/>
       <Wave color={'#0090c1'} height={-100 + height / 4 * 2.2} priority={3}/>
       <Wave color={'#046e8f'} height={-100 + height / 4 * 3} priority={4}/>

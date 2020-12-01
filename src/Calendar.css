@@ -37,7 +37,7 @@
   color: white;
 }
 
-.calendar-entry:hover {
+.active:hover {
   background: rgba(255, 255, 255, 0.267);
   cursor: pointer;
 }
