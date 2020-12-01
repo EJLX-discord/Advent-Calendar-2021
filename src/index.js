@@ -95,6 +95,7 @@ export default function App () {
             icon={entry.metadata.icon}
             alias={entry.metadata.alias}
             username={entry.metadata.username}
+            id={entry.metadata.id}
             date={entry.metadata.date}
             entry={entry.node}
             key={idx}

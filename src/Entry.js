@@ -4,6 +4,7 @@ export default function Entry (props) {
   const {
     icon,
     username = 'Anonymous',
+    id = '',
     date = 'Unknown Date',
     entry = 'No entry...'
   } = props
@@ -18,7 +19,8 @@ export default function Entry (props) {
               <div className={'entry-titlebar-username'}>
                 {alias}
                 <span className={'entry-titlebar-tooltip'}>
-                  {username}
+                  <div>{username}</div>
+                  <div>{id}</div>
                 </span>
                 </div>
               <div className={'entry-titlebar-date'}>{date}</div>
