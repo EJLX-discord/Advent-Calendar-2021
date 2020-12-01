@@ -5,6 +5,7 @@ import FrontMatter from './Front-Matter'
 import 'particles.js'
 import particleOptions from './particles.json'
 import particleBackOptions from './particles-back.json'
+import anime from 'animejs'
 import { useEffect } from 'preact/hooks'
 
 function getEntries (entryNames, entryDirectory = './data/entries') {
@@ -24,6 +25,29 @@ export default function App () {
   useEffect(() => {
     particlesJS('particles', particleOptions)
     particlesJS('particles-back', particleBackOptions)
+  }, [])
+
+  useEffect(() => {
+    window.addEventListener('mousemove', (e) => {
+      const mouseX = e.clientX
+      const mouseY = e.clientY
+      const xRatio = mouseX / window.innerWidth
+      const yRatio = mouseY / window.innerHeight
+      anime({
+        targets: '#particles',
+        duration: 500,
+        easing: 'easeOutCubic',
+        translateX: (xRatio - 0.5) * -15,
+        translateY: (yRatio - 0.5) * -15
+      })
+      anime({
+        targets: '#particles-back',
+        duration: 500,
+        easing: 'easeOutCubic',
+        translateX: (xRatio - 0.5) * -40,
+        translateY: (yRatio - 0.5) * -40
+      })
+    })
   }, [])
 
   return (
