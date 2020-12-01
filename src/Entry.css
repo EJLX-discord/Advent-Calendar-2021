@@ -46,6 +46,32 @@
   font-size: 1.3rem;
   position: relative;
   top: 2px;
+  cursor: pointer;
+}
+
+.entry-titlebar-tooltip {
+  position: absolute;
+  visibility: hidden;
+  background: #ffffff11;
+  width: 200px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  bottom: 30px;
+  border-radius: 5px;
+  opacity: 0;
+  left: 0px;
+  transition: opacity .25s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.entry-titlebar-username:hover .entry-titlebar-tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 .entry-titlebar-date {
@@ -72,8 +98,9 @@
 @media only screen and (max-width: 600px) {
   .entry-titlebar-username {
     font-size: 1rem;
-    overflow-x: hidden;
-    white-space: nowrap;
+  }
+  .entry-titlebar-tooltip {
+    width: 150px;
   }
   .entry-titlebar-date {
     font-size: .9rem;

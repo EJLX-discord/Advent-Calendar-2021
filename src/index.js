@@ -1,6 +1,7 @@
 import './index.css'
 import Entry from './Entry'
 import FrontMatter from './Front-Matter'
+import BackToTopButton from './Back-To-Top-Button'
 
 import 'particles.js'
 import particleOptions from './particles.json'
@@ -53,11 +54,13 @@ export default function App () {
   return (
     <>
       <FrontMatter />
+      <BackToTopButton />
       <div className={'main-container'}>
         <div className={'entry-list'}>
           {entries.map((entry, idx) =>
             <Entry
             icon={entry.metadata.icon}
+            alias={entry.metadata.alias}
             username={entry.metadata.username}
             date={entry.metadata.date}
             entry={entry.node}

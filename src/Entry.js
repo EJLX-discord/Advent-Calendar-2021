@@ -3,9 +3,10 @@ import './Entry.css'
 export default function Entry (props) {
   const {
     icon,
+    alias = 'Anonymous',
     username = 'Anonymous',
     date = 'Unknown Date',
-    entry = 'Entry skipped'
+    entry = 'No entry...'
   } = props
   return (
     <div className={'entry'}>
@@ -14,7 +15,12 @@ export default function Entry (props) {
           <img className={'entry-titlebar-icon'} src={icon}/>
           <div className={'entry-titlebar-text-container'}>
             <div className={'entry-titlebar-text'}>
-              <div className={'entry-titlebar-username'}>{username}</div>
+              <div className={'entry-titlebar-username'}>
+                {alias}
+                <span className={'entry-titlebar-tooltip'}>
+                  {username}
+                </span>
+                </div>
               <div className={'entry-titlebar-date'}>{date}</div>
             </div>
           </div>
