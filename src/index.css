@@ -23,15 +23,16 @@ p {
 
 .main-container {
 	padding: 50px 15px 150px 15px;
-	background: #fff;
+	background: #183446;
 }
 
-.particles {
-  position: absolute;
-  display: block;
+#particles, #particles-back {
+  position: fixed;
   top: 0;
-  left: 0;
-  z-index: -1;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
 }
 
 .entry-list {
