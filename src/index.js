@@ -9,6 +9,20 @@ import particleBackOptions from './particles-back.json'
 import anime from 'animejs'
 import { useEffect } from 'preact/hooks'
 
+// Overwrites function used by particle.js that uses deprecated variables
+Object.deepExtend = function deepExtendFunction (destination, source) {
+  for (const property in source) {
+    if (source[property] && source[property].constructor &&
+      source[property].constructor === Object) {
+      destination[property] = destination[property] || {}
+      deepExtendFunction(destination[property], source[property])
+    } else {
+      destination[property] = source[property]
+    }
+  }
+  return destination
+}
+
 function getEntries (entryNames, entryDirectory = './data/entries') {
   const entries = entryNames.map(entryName => {
     const entry = {}
