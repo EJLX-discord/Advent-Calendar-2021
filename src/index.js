@@ -23,6 +23,23 @@ Object.deepExtend = function deepExtendFunction (destination, source) {
   return destination
 }
 
+// Debounce function taken from underscore.js
+function debounce (func, wait, immediate) {
+  let timeout
+  return function () {
+    const context = this
+    const args = arguments
+    const later = function () {
+      timeout = null
+      if (!immediate) func.apply(context, args)
+    }
+    const callNow = immediate && !timeout
+    clearTimeout(timeout)
+    timeout = setTimeout(later, wait)
+    if (callNow) func.apply(context, args)
+  }
+}
+
 function getEntries (entryNames, entryDirectory = './data/entries') {
   const entries = entryNames.map(entryName => {
     const entry = {}
@@ -36,33 +53,35 @@ function getEntries (entryNames, entryDirectory = './data/entries') {
 
 export default function App () {
   const entries = getEntries([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 22, 28])
-
   useEffect(() => {
     particlesJS('particles', particleOptions)
     particlesJS('particles-back', particleBackOptions)
   }, [])
 
   useEffect(() => {
-    window.addEventListener('mousemove', (e) => {
+    window.addEventListener('mousemove', debounce((e) => {
       const mouseX = e.clientX
       const mouseY = e.clientY
       const xRatio = mouseX / window.innerWidth
       const yRatio = mouseY / window.innerHeight
+      const normalizedX = (xRatio - 0.5) * 2
+      const normalizedY = (yRatio - 0.5) * 2
+
       anime({
         targets: '#particles',
         duration: 500,
-        easing: 'easeOutCubic',
-        translateX: (xRatio - 0.5) * -15,
-        translateY: (yRatio - 0.5) * -15
+        easing: 'easeOutSine',
+        translateX: normalizedX * -10,
+        translateY: normalizedY * -10
       })
       anime({
         targets: '#particles-back',
         duration: 500,
-        easing: 'easeOutCubic',
-        translateX: (xRatio - 0.5) * -40,
-        translateY: (yRatio - 0.5) * -40
+        easing: 'easeOutSine',
+        translateX: normalizedX * -20,
+        translateY: normalizedY * -20
       })
-    })
+    }), 100)
   }, [])
 
   return (
