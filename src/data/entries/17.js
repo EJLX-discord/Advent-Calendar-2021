@@ -7,8 +7,9 @@ export default (
 )
 
 export const metadata = {
-  alias: '',
+  alias: 'Alexis / アレクシー 🇫🇷',
   username: 'd/Alexis',
+  id: '294441472864944129',
   index: 17,
   date: 'December 17',
   icon: icon

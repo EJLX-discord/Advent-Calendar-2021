@@ -7,8 +7,9 @@ export default (
 )
 
 export const metadata = {
-  alias: '',
+  alias: 'Pres. Chicken Kaguya (Matsuo)',
   username: '𝖘𝖎𝖒𝖕',
+  id: '439066710109323264',
   index: 13,
   date: 'December 13',
   icon: icon
