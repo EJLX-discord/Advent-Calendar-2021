@@ -5,6 +5,25 @@
   flex-direction: column;
 }
 
+.front-page-go-back-link {
+  color: #ccc;
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  padding: 7px 15px;
+  cursor: pointer;
+  background: #ffffff11;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.25s linear;
+}
+
+.front-page-go-back-link:hover {
+  background: #ffffff55;
+}
+
 .front-page-title {
   font-size: 4.5rem;
   color: white;
