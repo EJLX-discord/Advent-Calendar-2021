@@ -15,45 +15,45 @@ export default function Calendar () {
       <div className={'calendar-row'}>
         <div className={'calendar-entry inactive'}>29</div>
         <div className={'calendar-entry inactive'}>30</div>
-        <div className={'calendar-entry active'}>1</div>
-        <div className={'calendar-entry active'}>2</div>
-        <div className={'calendar-entry active'}>3</div>
-        <div className={'calendar-entry active'}>4</div>
-        <div className={'calendar-entry active'}>5</div>
+        <a className={'calendar-entry active'} href={'#entry-1'}>1</a>
+        <a className={'calendar-entry active'} href={'#entry-2'}>2</a>
+        <a className={'calendar-entry active'} href={'#entry-3'}>3</a>
+        <a className={'calendar-entry active'} href={'#entry-4'}>4</a>
+        <a className={'calendar-entry active'} href={'#entry-5'}>5</a>
       </div>
       <div className={'calendar-row'}>
-        <div className={'calendar-entry active'}>6</div>
-        <div className={'calendar-entry active'}>7</div>
-        <div className={'calendar-entry active'}>8</div>
-        <div className={'calendar-entry active'}>9</div>
-        <div className={'calendar-entry active'}>10</div>
-        <div className={'calendar-entry active'}>11</div>
-        <div className={'calendar-entry active'}>12</div>
+        <a className={'calendar-entry active'} href={'#entry-6'}>6</a>
+        <a className={'calendar-entry active'} href={'#entry-7'}>7</a>
+        <a className={'calendar-entry active'} href={'#entry-8'}>8</a>
+        <a className={'calendar-entry active'} href={'#entry-9'}>9</a>
+        <a className={'calendar-entry active'} href={'#entry-10'}>10</a>
+        <a className={'calendar-entry active'} href={'#entry-11'}>11</a>
+        <a className={'calendar-entry active'} href={'#entry-12'}>12</a>
       </div>
       <div className={'calendar-row'}>
-        <div className={'calendar-entry active'}>13</div>
-        <div className={'calendar-entry active'}>14</div>
-        <div className={'calendar-entry active'}>15</div>
-        <div className={'calendar-entry active'}>16</div>
-        <div className={'calendar-entry active'}>17</div>
-        <div className={'calendar-entry active'}>18</div>
-        <div className={'calendar-entry active'}>19</div>
+        <a className={'calendar-entry active'} href={'#entry-13'}>13</a>
+        <a className={'calendar-entry active'} href={'#entry-14'}>14</a>
+        <a className={'calendar-entry active'} href={'#entry-15'}>15</a>
+        <a className={'calendar-entry active'} href={'#entry-16'}>16</a>
+        <a className={'calendar-entry active'} href={'#entry-17'}>17</a>
+        <a className={'calendar-entry active'} href={'#entry-18'}>18</a>
+        <a className={'calendar-entry active'} href={'#entry-19'}>19</a>
       </div>
       <div className={'calendar-row'}>
-        <div className={'calendar-entry active'}>20</div>
-        <div className={'calendar-entry active'}>21</div>
-        <div className={'calendar-entry active'}>22</div>
-        <div className={'calendar-entry active'}>23</div>
-        <div className={'calendar-entry active'}>24</div>
-        <div className={'calendar-entry active'}>25</div>
-        <div className={'calendar-entry active'}>26</div>
+        <a className={'calendar-entry active'} href={'#entry-20'}>20</a>
+        <a className={'calendar-entry active'} href={'#entry-21'}>21</a>
+        <a className={'calendar-entry active'} href={'#entry-22'}>22</a>
+        <a className={'calendar-entry active'} href={'#entry-23'}>23</a>
+        <a className={'calendar-entry active'} href={'#entry-24'}>24</a>
+        <a className={'calendar-entry active'} href={'#entry-25'}>25</a>
+        <a className={'calendar-entry active'} href={'#entry-26'}>26</a>
       </div>
       <div className={'calendar-row'}>
-        <div className={'calendar-entry active'}>27</div>
-        <div className={'calendar-entry active'}>28</div>
-        <div className={'calendar-entry active'}>29</div>
-        <div className={'calendar-entry active'}>30</div>
-        <div className={'calendar-entry active'}>31</div>
+        <a className={'calendar-entry active'} href={'#entry-27'}>27</a>
+        <a className={'calendar-entry active'} href={'#entry-28'}>28</a>
+        <a className={'calendar-entry active'} href={'#entry-29'}>29</a>
+        <a className={'calendar-entry active'} href={'#entry-30'}>30</a>
+        <a className={'calendar-entry active'} href={'#entry-31'}>31</a>
         <div className={'calendar-entry inactive'}>1</div>
         <div className={'calendar-entry inactive'}>2</div>
       </div>

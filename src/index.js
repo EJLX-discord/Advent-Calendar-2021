@@ -126,13 +126,14 @@ export default function App () {
         <div className={'entry-list'}>
           {entries.map((entry, idx) =>
             <Entry
-            icon={entry.metadata.icon}
-            alias={entry.metadata.alias}
-            username={entry.metadata.username}
-            id={entry.metadata.id}
-            date={entry.metadata.date}
-            entry={entry.node}
-            key={idx}
+              icon={entry.metadata.icon}
+              alias={entry.metadata.alias}
+              username={entry.metadata.username}
+              id={entry.metadata.id}
+              date={entry.metadata.date}
+              entry={entry.node}
+              entryIndex={entry.metadata.index}
+              key={idx}
             />
           )}
         </div>

@@ -3,6 +3,7 @@ import './Entry.css'
 export default function Entry (props) {
   const {
     icon,
+    entryIndex,
     username = 'Anonymous',
     id = '',
     date = 'Unknown Date',
@@ -10,7 +11,7 @@ export default function Entry (props) {
   } = props
   const alias = props.alias || username || 'Anonymous'
   return (
-    <div className={'entry'}>
+    <div className={'entry'} id={`entry-${entryIndex}`}>
       <div className={'entry-titlebar'}>
         <div className={'entry-titlebar-info'}>
           <img className={'entry-titlebar-icon'} src={icon}/>
