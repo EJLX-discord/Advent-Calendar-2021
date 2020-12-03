@@ -1,13 +1,12 @@
-import icon from '../icons/default.png'
-
+import icon from '../icons/morisi.png'
 export default (
   <></>
 )
 
 export const metadata = {
   alias: null,
-  username: 'Empty',
-  id: null,
+  username: 'morisi',
+  id: '387005672291696641',
   index: 29,
   date: 'December 29',
   icon: icon
