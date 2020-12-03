@@ -8,7 +8,7 @@ import 'particles.js'
 import particleOptions from './particles.json'
 import particleBackOptions from './particles-back.json'
 import anime from 'animejs'
-import { useEffect, useRef } from 'preact/hooks'
+import { useState, useEffect, useRef } from 'preact/hooks'
 
 // Overwrites function used by particle.js that uses deprecated variables
 Object.deepExtend = function deepExtendFunction (destination, source) {
@@ -52,6 +52,30 @@ function getEntries (entryNames, entryDirectory = './data/entries') {
   return entries
 }
 
+const handleParallax = debounce((e) => {
+  const mouseX = e.clientX
+  const mouseY = e.clientY
+  const xRatio = mouseX / window.innerWidth
+  const yRatio = mouseY / window.innerHeight
+  const normalizedX = (xRatio - 0.5) * 2
+  const normalizedY = (yRatio - 0.5) * 2
+
+  anime({
+    targets: '#particles',
+    duration: 500,
+    easing: 'easeOutSine',
+    translateX: normalizedX * -10,
+    translateY: normalizedY * -10
+  })
+  anime({
+    targets: '#particles-back',
+    duration: 500,
+    easing: 'easeOutSine',
+    translateX: normalizedX * -20,
+    translateY: normalizedY * -20
+  })
+}, 0)
+
 export default function App () {
   const entries = getEntries([
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
@@ -59,53 +83,38 @@ export default function App () {
     21, 22, 25, 26, 28
   ])
 
-  const snowLayer1 = useRef(null)
-  const snowLayer2 = useRef(null)
-  
   useEffect(() => {
     particlesJS('particles', particleOptions)
     particlesJS('particles-back', particleBackOptions)
   }, [])
 
-  useEffect(() => {
-    window.addEventListener('mousemove', debounce((e) => {
-      const mouseX = e.clientX
-      const mouseY = e.clientY
-      const xRatio = mouseX / window.innerWidth
-      const yRatio = mouseY / window.innerHeight
-      const normalizedX = (xRatio - 0.5) * 2
-      const normalizedY = (yRatio - 0.5) * 2
+  const snowLayer1 = useRef(null)
+  const snowLayer2 = useRef(null)
 
-      anime({
-        targets: '#particles',
-        duration: 500,
-        easing: 'easeOutSine',
-        translateX: normalizedX * -10,
-        translateY: normalizedY * -10
-      })
-      anime({
-        targets: '#particles-back',
-        duration: 500,
-        easing: 'easeOutSine',
-        translateX: normalizedX * -20,
-        translateY: normalizedY * -20
-      })
-    }), 250)
+  useEffect(() => {
+    window.addEventListener('mousemove', handleParallax)
   }, [])
 
   const toggleSnow = () => {
-    cancelRequestAnimFrame(pJSDom[0].pJS.fn.checkAnimFrame)
-    cancelRequestAnimFrame(pJSDom[0].pJS.fn.drawAnimFrame)
-    cancelRequestAnimFrame(pJSDom[1].pJS.fn.checkAnimFrame)
-    cancelRequestAnimFrame(pJSDom[1].pJS.fn.drawAnimFrame)
-    pJSDom[0].pJS.fn.particlesEmpty()
-    pJSDom[1].pJS.fn.particlesEmpty()
-    pJSDom[0].pJS.fn.canvasClear()
-    pJSDom[1].pJS.fn.canvasClear()
-    snowLayer1.current.classList.toggle('hidden')
-    snowLayer2.current.classList.toggle('hidden')
-    pJSDom[0].pJS.fn.vendors.start()
-    pJSDom[1].pJS.fn.vendors.start()
+    if (snowLayer1.current.classList.contains('hidden')) {
+      snowLayer1.current.classList.remove('hidden')
+      snowLayer2.current.classList.remove('hidden')
+      pJSDom[0].pJS.fn.vendors.start()
+      pJSDom[1].pJS.fn.vendors.start()
+      window.addEventListener('mousemove', handleParallax)
+    } else {
+      cancelRequestAnimFrame(pJSDom[0].pJS.fn.checkAnimFrame)
+      cancelRequestAnimFrame(pJSDom[0].pJS.fn.drawAnimFrame)
+      cancelRequestAnimFrame(pJSDom[1].pJS.fn.checkAnimFrame)
+      cancelRequestAnimFrame(pJSDom[1].pJS.fn.drawAnimFrame)
+      pJSDom[0].pJS.fn.particlesEmpty()
+      pJSDom[1].pJS.fn.particlesEmpty()
+      pJSDom[0].pJS.fn.canvasClear()
+      pJSDom[1].pJS.fn.canvasClear()
+      window.removeEventListener('mousemove', handleParallax)
+      snowLayer1.current.classList.add('hidden')
+      snowLayer2.current.classList.add('hidden')
+    }
   }
 
   return (
