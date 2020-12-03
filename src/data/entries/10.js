@@ -1,9 +1,7 @@
 import icon from '../icons/skyz.png'
 
 export default (
-  <div>
-    Yet to come...
-  </div>
+  <></>
 )
 
 export const metadata = {

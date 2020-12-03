@@ -1,9 +1,7 @@
 import icon from '../icons/simp.gif'
 
 export default (
-  <div>
-    Yet to come...
-  </div>
+  <></>
 )
 
 export const metadata = {

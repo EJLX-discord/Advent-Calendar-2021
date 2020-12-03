@@ -1,9 +1,7 @@
 import icon from '../icons/steamedbread.png'
 
 export default (
-  <div>
-    Yet to come...
-  </div>
+  <></>
 )
 
 export const metadata = {
