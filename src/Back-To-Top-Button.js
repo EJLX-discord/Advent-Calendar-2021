@@ -8,6 +8,7 @@ export default function BackToTopButton () {
   useEffect(() => {
     button.current.addEventListener('click', (e) => {
       window.scroll(0, 0)
+      window.history.pushState({}, '', './')
     })
   }, [])
   return (
