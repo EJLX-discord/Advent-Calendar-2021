@@ -1,5 +1,7 @@
 import { useEffect, useRef } from 'preact/hooks'
-import './Back-To-Top-Button.css'
+import './Button.css'
+
+import upArrow from '../assets/up.png'
 
 export default function BackToTopButton () {
   const button = useRef(null)
@@ -9,11 +11,12 @@ export default function BackToTopButton () {
     })
   }, [])
   return (
-    <div className={'back-to-top-button'} role="button" ref={button}>
-      <div className={'back-to-top-button-arrow-container'}>
-        <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" version="1.1">
-          <polyline points="10 50 25 25 40 50 25 40 10 50" strokeLinecap="butt" fill="#ccccccaa" strokeLinejoin="miter"/>
-        </svg>
+    <div className={'button back-to-top-button'} role="button" ref={button}>
+      <div className={'button-container'} style={{
+        position: 'relative',
+        bottom: 2
+      }}>
+        <img src={upArrow} className={'invert'} height={25} width={25} />
       </div>
     </div>
   )

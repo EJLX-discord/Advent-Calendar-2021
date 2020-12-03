@@ -2,12 +2,13 @@ import './index.css'
 import Entry from './Entry'
 import FrontMatter from './Front-Matter'
 import BackToTopButton from './Back-To-Top-Button'
+import SnowToggleButton from './Snow-Toggle-Button'
 
 import 'particles.js'
 import particleOptions from './particles.json'
 import particleBackOptions from './particles-back.json'
 import anime from 'animejs'
-import { useEffect } from 'preact/hooks'
+import { useEffect, useRef } from 'preact/hooks'
 
 // Overwrites function used by particle.js that uses deprecated variables
 Object.deepExtend = function deepExtendFunction (destination, source) {
@@ -57,6 +58,10 @@ export default function App () {
     11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
     21, 22, 25, 26, 28
   ])
+
+  const snowLayer1 = useRef(null)
+  const snowLayer2 = useRef(null)
+  
   useEffect(() => {
     particlesJS('particles', particleOptions)
     particlesJS('particles-back', particleBackOptions)
@@ -88,10 +93,26 @@ export default function App () {
     }), 250)
   }, [])
 
+  const toggleSnow = () => {
+    cancelRequestAnimFrame(pJSDom[0].pJS.fn.checkAnimFrame)
+    cancelRequestAnimFrame(pJSDom[0].pJS.fn.drawAnimFrame)
+    cancelRequestAnimFrame(pJSDom[1].pJS.fn.checkAnimFrame)
+    cancelRequestAnimFrame(pJSDom[1].pJS.fn.drawAnimFrame)
+    pJSDom[0].pJS.fn.particlesEmpty()
+    pJSDom[1].pJS.fn.particlesEmpty()
+    pJSDom[0].pJS.fn.canvasClear()
+    pJSDom[1].pJS.fn.canvasClear()
+    snowLayer1.current.classList.toggle('hidden')
+    snowLayer2.current.classList.toggle('hidden')
+    pJSDom[0].pJS.fn.vendors.start()
+    pJSDom[1].pJS.fn.vendors.start()
+  }
+
   return (
     <>
       <FrontMatter />
       <BackToTopButton />
+      <SnowToggleButton toggleSnow={toggleSnow}/>
       <div className={'main-container'}>
         <div className={'entry-list'}>
           {entries.map((entry, idx) =>
@@ -107,8 +128,8 @@ export default function App () {
           )}
         </div>
       </div>
-      <div id={'particles'}/>
-      <div id={'particles-back'}/>
+      <div id={'particles'} ref={snowLayer1}/>
+      <div id={'particles-back'} ref={snowLayer2}/>
     </>
   )
 }

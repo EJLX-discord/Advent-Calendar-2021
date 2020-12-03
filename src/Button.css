@@ -1,0 +1,59 @@
+.button {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #ffffff33;
+  border-radius: 50%;
+  z-index: 100;
+  user-select: none;
+  transition: background 0.25s ease-in-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #ffffff88;
+}
+
+.back-to-top-button {
+  bottom: 25px;
+  right: 30px;
+}
+
+.snow-toggle-button {
+  bottom: 90px;
+  right: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.invert {
+  filter: invert(70%);
+  transition: filter 0.25s linear;
+}
+
+.button-container:hover .invert {
+  filter: invert(90%);
+}
+
+.spinning {
+  animation: spinning-animation 20s linear 0s infinite normal forwards;
+}
+
+.button-disabled {
+  background: #ffffff11;
+}
+
+.snowflake-disabled {
+  filter: invert(40%);
+}
+
+@keyframes spinning-animation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

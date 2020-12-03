@@ -8,6 +8,7 @@
   transition: background .5s ease-in-out;
   position: relative;
   z-index: 10;
+  user-select: none;
 }
 
 .calendar:hover {
