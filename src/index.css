@@ -64,3 +64,19 @@ a {
 .hidden {
 	visibility: hidden;
 }
+
+.entry-block {
+	padding: 10px 0;
+	line-height: 1.4rem;
+}
+
+.entry-block-header {
+	font-weight: bold;
+	font-size: 1rem;
+	text-decoration: underline;
+}
+
+.unemph {
+	color: #aaa;
+	font-size: 0.95em;
+}
