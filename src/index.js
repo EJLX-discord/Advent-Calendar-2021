@@ -80,7 +80,8 @@ const handleParallax = debounce((e) => {
 const cookies = new Cookies()
 
 export default function App () {
-  const firstState = cookies.get('isSnowEnabled') === 'true'
+  const cookieVal = cookies.get('isSnowEnabled')
+  const firstState = cookieVal === undefined ? true : cookieVal === 'true'
   const [isSnowEnabled, setIsSnowEnabled] = useState(firstState)
   const entries = getEntries([
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
