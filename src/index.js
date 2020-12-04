@@ -4,11 +4,12 @@ import FrontMatter from './Front-Matter'
 import BackToTopButton from './Back-To-Top-Button'
 import SnowToggleButton from './Snow-Toggle-Button'
 
-import 'particles.js'
+import { tsParticles } from 'tsparticles'
+import anime from 'animejs'
+import Cookies from 'universal-cookie'
 import particleOptions from './particles.json'
 import particleBackOptions from './particles-back.json'
-import anime from 'animejs'
-import { useState, useEffect, useRef } from 'preact/hooks'
+import { useState, useEffect } from 'preact/hooks'
 
 // Overwrites function used by particle.js that uses deprecated variables
 Object.deepExtend = function deepExtendFunction (destination, source) {
@@ -76,7 +77,11 @@ const handleParallax = debounce((e) => {
   })
 }, 0)
 
+const cookies = new Cookies()
+
 export default function App () {
+  const firstState = cookies.get('isSnowEnabled') === 'true'
+  const [isSnowEnabled, setIsSnowEnabled] = useState(firstState)
   const entries = getEntries([
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
     11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
@@ -84,44 +89,35 @@ export default function App () {
   ])
 
   useEffect(() => {
-    particlesJS('particles', particleOptions)
-    particlesJS('particles-back', particleBackOptions)
+    tsParticles.load('particles', particleOptions)
+    tsParticles.load('particles-back', particleBackOptions)
   }, [])
-
-  const snowLayer1 = useRef(null)
-  const snowLayer2 = useRef(null)
 
   useEffect(() => {
-    window.addEventListener('mousemove', handleParallax)
-  }, [])
-
-  const toggleSnow = () => {
-    if (snowLayer1.current.classList.contains('hidden')) {
-      snowLayer1.current.classList.remove('hidden')
-      snowLayer2.current.classList.remove('hidden')
-      pJSDom[0].pJS.fn.vendors.start()
-      pJSDom[1].pJS.fn.vendors.start()
+    if (isSnowEnabled) {
+      tsParticles.domItem(0).play()
+      tsParticles.domItem(1).play()
       window.addEventListener('mousemove', handleParallax)
     } else {
-      cancelRequestAnimFrame(pJSDom[0].pJS.fn.checkAnimFrame)
-      cancelRequestAnimFrame(pJSDom[0].pJS.fn.drawAnimFrame)
-      cancelRequestAnimFrame(pJSDom[1].pJS.fn.checkAnimFrame)
-      cancelRequestAnimFrame(pJSDom[1].pJS.fn.drawAnimFrame)
-      pJSDom[0].pJS.fn.particlesEmpty()
-      pJSDom[1].pJS.fn.particlesEmpty()
-      pJSDom[0].pJS.fn.canvasClear()
-      pJSDom[1].pJS.fn.canvasClear()
+      tsParticles.domItem(0).pause()
+      tsParticles.domItem(1).pause()
       window.removeEventListener('mousemove', handleParallax)
-      snowLayer1.current.classList.add('hidden')
-      snowLayer2.current.classList.add('hidden')
     }
+  }, [isSnowEnabled])
+
+  const toggleSnow = () => {
+    cookies.set('isSnowEnabled', !isSnowEnabled, { maxAge: 2147483647, sameSite: 'strict' })
+    setIsSnowEnabled(!isSnowEnabled)
   }
 
   return (
     <>
-      <FrontMatter />
+      <FrontMatter isWaveEnabled={isSnowEnabled}/>
       <BackToTopButton />
-      <SnowToggleButton toggleSnow={toggleSnow}/>
+      <SnowToggleButton
+        toggleSnow={toggleSnow}
+        isSnowEnabled={isSnowEnabled}
+      />
       <div className={'main-container'}>
         <div className={'entry-list'}>
           {entries.map((entry, idx) =>
@@ -138,8 +134,8 @@ export default function App () {
           )}
         </div>
       </div>
-      <div id={'particles'} ref={snowLayer1}/>
-      <div id={'particles-back'} ref={snowLayer2}/>
+      <div id={'particles'} className={isSnowEnabled ? '' : 'hidden'}/>
+      <div id={'particles-back'} className={isSnowEnabled ? '' : 'hidden'}/>
     </>
   )
 }

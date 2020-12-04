@@ -28,8 +28,9 @@
   },
   "dependencies": {
     "animejs": "^3.2.1",
-    "particles.js": "^2.0.0",
     "preact": "^10.1.0",
-    "preact-render-to-string": "^5.1.2"
+    "preact-render-to-string": "^5.1.2",
+    "tsparticles": "^1.18.11",
+    "universal-cookie": "^4.0.4"
   }
 }
