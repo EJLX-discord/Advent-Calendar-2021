@@ -9,6 +9,6 @@ export const metadata = {
   username: 'TofuMars',
   id: '317491770114048000',
   index: 25,
-  date: 'December 25',
+  date: 'December 25 (Christmas)',
   icon: icon
 }

@@ -9,6 +9,6 @@ export const metadata = {
   username: '!DubbedAnime',
   id: '256345367879090176',
   index: 24,
-  date: 'December 24',
+  date: 'December 24 (Christmas Eve)',
   icon: icon
 }

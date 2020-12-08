@@ -1,14 +1,14 @@
-import icon from '../icons/espa.gif'
+import icon from '../icons/default.png'
 
 export default (
   <></>
 )
 
 export const metadata = {
-  alias: 'ESPAlchemist「Super Panama World」',
-  username: 'ESPAlchemist',
-  id: '128369934857273344',
+  alias: '',
+  username: 'Tentative',
+  id: '',
   index: 31,
-  date: 'December 31',
+  date: 'December 31 (New Years Eve)',
   icon: icon
 }
