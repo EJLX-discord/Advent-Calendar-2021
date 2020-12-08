@@ -54,7 +54,7 @@ export default function Calendar () {
         <a className={'calendar-entry active'} href={'#entry-29'}>29</a>
         <a className={'calendar-entry active'} href={'#entry-30'}>30</a>
         <a className={'calendar-entry active'} href={'#entry-31'}>31</a>
-        <div className={'calendar-entry inactive'}>1</div>
+        <a className={'calendar-entry active'} href={'#entry-32'}>1</a>
         <div className={'calendar-entry inactive'}>2</div>
       </div>
     </div>
