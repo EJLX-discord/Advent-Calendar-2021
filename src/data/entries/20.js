@@ -1,13 +1,13 @@
-import icon from '../icons/jupiter.png'
+import icon from '../icons/coda.png'
 
 export default (
   <></>
 )
 
 export const metadata = {
-  alias: 'Jupiter | ジュピター',
-  username: 'jupiter',
-  id: '232376738305409024',
+  alias: 'Coda 小田📝（ただのこだだよ）',
+  username: 'Coda',
+  id: '199222214078365697',
   index: 20,
   date: 'December 20',
   icon: icon
