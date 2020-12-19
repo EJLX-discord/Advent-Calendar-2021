@@ -12,10 +12,11 @@ import yotsubaSalute from '../emotes/yotsubaSalute.png'
 
 export default (
   <>
-  <div>
+  <div className={'jp'}>
     アドベント・カレンダー<br/>
     2020年12月16日 (木)
   </div>
+  <div className={'jp'}>
 
     <p>皆さん、こんにちは！アレクシーです. <img src={aPikaWave} className={'emote'} /> <br/>
     今日はボクの日記を書くの番です ! 楽しみにしてくださいね. <img src={bow3} className={'emote'} /> </p>
@@ -36,6 +37,7 @@ export default (
 
     <p>読んでくれてありがとうございます !<br/>
     間違ってたら、#correct_me やメッセジーに修正を送っては気にしないでくださいね. <img src={bow3} className={'emote'} /></p>
+  </div>
   </>
 )
 
