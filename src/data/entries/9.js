@@ -3,7 +3,7 @@ import image1 from '../images/9.jpg'
 
 export default (
   <>
-  <img className={'entry-image'} src={image1} />
+  <img className={'entry-image'} src={image1} alt={'俺の記事を読め！'}/>
   <div>
   December 9th, 2020
   </div>
