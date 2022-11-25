@@ -1,36 +1,80 @@
-import icon from '../icons/coda.png'
+import icon from '../icons/reion.webp'
+// import audio from '../audio/reion.mp3'
+import yotsubaPray from '../emotes/yotsubaPray.webp'
+import pikaoh from '../emotes/pikaoh.webp'
+import rooGentleman from '../emotes/rooGentleman.webp'
+import zabu from '../emotes/zabu.webp'
+import squirtleGigaDorp from '../emotes/squirtleGigaDorp.webp'
+import bulbaDerp from '../emotes/bulbaDerp.webp'
+import TFA_ServiceBell from '../emotes/TFA_ServiceBell.gif'
+import bcaMoney5Slap from '../emotes/bcaMoney5Slap.gif'
+import TFA_BlueSparkles from '../emotes/TFA_BlueSparkles.gif'
 
 export default (
   <>
-    <div className={'jp'}>
-      ２０２０/１２/２０{'　　'}アドベントカレンダー
-      短編小説
-    </div>
-    <div className={'jp'}>
-      <p>！！これは作り話です。私の生命から響きではない{'　'}This is a made up story. This is not inspired by my own life.{'　'}！！</p>
+  <div className={'jp'}>
+    <p>みなさん、こんにちは。お元気にされていますか？</p>
 
-      <p>今晩子供の頃の都市に戻る。毎度、不思議な感じが出てくる。エレベーターに乗るときに母からSNSが届いた。「家から立ち去ったばかりだ・二時間後に到着するよ」会社から出る時、もう夜だった。通りには明かりがこうこうとついていたお店がいっぱいあった。親子や恋人同士があっちこっち歩いていて、複数の紙の買い物袋を持ってた。本屋さんの窓ガラスから「おすすめ」と「クリスマス★プレゼント」と「ベストセラー」の赤と緑文字で手書いたPOPが店頭在庫の上に飾られていた。去年の私が書いた本はここに置いていた。制服と黒い冬服コートを着ていた彼女がこの本を手に取って読み始めた。暫く、お店の窓ガラスの前で立って自分の顔の白黒写真をじっくり見ていた。変な自己愛だと思ってたから見るのをやめて地下鉄の入口へ向かった。</p>
-      <p>私は家族が車で迎えに行く。父と母と弟がいます。車を乗って、首都に別れを告げる。色々な灯やクリスマスの飾りが徐々に少なくなった。窓から黒い空と高速道路を物思わしげに見て取っていた。立て続けに明かるい電車の窓が横に走っていた。短い間に電車が車と同じスピードを出して、そして木の闇に消えた。「星は細い」と思った。道路の横には電柱が通り過ぎた。私の思いが降り返す。</p>
-      <p>「まもなく、飛行機は家ゲートに到着予定です。ご利用いただきましてありがとうございました。」お父さんがこれを言って、笑いながら車を止まった。私は二十分の前から寝ていたので、身体をぐったり動いて、腕を伸ばした。</p>
-      <p>お母さんが到着前にファミレスに電話でカレーを注文しておく。皆は食卓の準備をしていた。朝からチョコバーだけを食べたので私はすっごくお腹が空いた。少しだけ話した。私の書いている本には、彼氏のことには。十一時間だった。皆は旅行のせいで疲れただろう。</p>
-      <p>旅行鞄を二階へ運んだ。お母さんがシーツをくれて、私は布団の用意をした。鞄から万年筆とノートを取り出して古い机の上に置く。机の棚にはまだ中学時代の妹と高校時代の私の写真が置いておく。私たちが笑っていたが彼女は私より深刻の顔をしていた。学年末だった。事故の数月間前に撮られたと思ってる。柔らかな電灯をつけて、書き始める。この場所は書けるになるかもと思っていた。先週は文筆者の雑誌にそれが書かれていた。「首都に住んでいて、頭の中には問題たくさんある場合、静かな場所に行って英気を養う。」まぁ．．．．．．静かすぎないか？この沈黙は、すこし不気味。テレビの鈍い音とくぐもった声が聞こえる。</p>
-      <p>思い出す。あの時代は、この家で数ヶ月を残った。大学校の第一年だった。時が止まる感じのようだった。事故の後で大学校に戻ることができなかった。「田舎には時間を残すのはいいです。毎日外に出て、力があれば散歩するようお勧めします。」医者さんが言った。四月か五月だったかとあんまり覚えない。毎夕、ご飯の後で外に出た。家族の犬を散歩させた。都市の丘へ歩いて、小麦畑が広がっていた。遠いところから電車のゴロゴロが聞こえた。丘空は薄紫色になるときに家に戻ってきた。</p>
-      <p>白いページには「妹ちゃんへ」を書く。今後、あの日の話は書くことが出来ると思う。「姉さんから」涙が流れ落ちた。</p>
-    </div>
+    <p>れいおんと 🐮 します。</p>
 
-    <div className={'jp'}>
-      <p>
-        To avoid any awkward moment of incomprehension, here is a short summary of what I tried to write (it spoils the story though so read it afterwards ^^&quot;): The story of a female writer, who returns to her parents’ home after a writing block. She decides for the first time to write about the death of her little sister during an accident that happened when the narrator was in first year of college. 
-      </p>
-    </div>
+    <p>&nbsp;&nbsp;&nbsp;今日は20日で私の<strong>ハツ</strong><span class="spoiler">アドベント</span><strong>カ</strong><span class="spoiler">レンダー</span>を投稿いたします。少し単純 🦆 しれませんが、ご一読いただければ幸いです。 </p>
 
+    <p>&nbsp;&nbsp;&nbsp;去年大学を卒業しまして長い間日本語を勉強しませんでした。大学で学び始めた科目はどうやって勉強すればいいのかや、独学で上達できる方法などがわからなくてほぼ毎日のんびりしていました。アニメを観る習慣もなくて聞く練習もしませんでした。ただ漫画やウェブトゥーンの話が好きで ネットにある"scanalations" （ファンのスキャン＋翻訳）を多く読んでいました。</p>
+
+    <p>&nbsp;&nbsp;&nbsp;少し飽きてしまったときは Reddit やユーチューブに切り替えることにしました。そこで今年の１月の下旬に r/learnjapanese のウィキからこちらのサーバーに入らせていただきました。卒業してから日本語を練習できる機会が減ったので、初めてこういったコミュニティーに入れて「すばらしい」としか感じられませんでした。多くの学習者が集まっていて気楽に会話するところをようやく見つけました。 <img src={pikaoh} className={'emote'} /></p>
+
+    <p>&nbsp;&nbsp;&nbsp;あちらこちらで雑談したり質問に答えたりしましたが、うまくなっていない、話すことができても進歩はしないという悩みがありました。基本はやはり仕事や #japanese_questions でしっかり覚えてきた一方、語彙力、文法力、読解力、会話力などは比較的弱いような気がしました。</p>
+
+    <p>今の私の日本語力は、ある程度に限っています。<br />
+    <span class="quote">日本に戻りたいな。日常生活で日本語の聞いたり話したりわかってもらったりできる日本にもう一度留学したい。こんなに下手になってきてやばい。3年前の私ならこういう長文は一気にできるんじゃない？サーバーにいる他の人は私より日本語がうまいじゃん、勉強している時間が比較的短いのに。<br />
+    と思いながら少しずつ緩みました。</span></p>
+
+    <p>&nbsp;&nbsp;&nbsp;というか、自分に緩ませてもらいました。欠点に対して自分を責め続けるのはつらくありませんか。ちょくちょく自信を砕いたり批判したりするのは大変なのではありませんか。過去の私、過去のことががっかりさせてしまっても今はもう何も変えられません。その代わりに変えられること、コントロールできること、今からの私に「関心＊」を持ちましょう。<br />
+    うつ病になりやすそうな考えを避けましょう。自信を持たせること、他人を笑わせることを中心に日本語を楽しみましょう。</p>
+
+    <p>＊関心、という言葉は中国語で「世話をする」や「お気遣い」などの意味もあります。</p>
+    ～～～～～
+    <p><audio controls>
+    {/* <source src={audio} type="audio/mpeg" /> */}
+    </audio></p>
+
+    <p>これからその時に生み出した日本語の楽しみ方を 🤏  少しだけご紹介させていただきます。<img src={rooGentleman} className={'emote'} /> </p>
+
+    <p>2021年4月26日に初めて <img src={zabu} className={'emote'} />  をもらいました。 <br />
+    <span class="quote"><s>僕の日本語が日本誤になっちゃった気がします</s> <img src={squirtleGigaDorp} className={'emote'} /> </span><br />
+    と認めてもらいました。<img src={pikaoh} className={'emote'} /> もう少し書きましょう。楽しみましょう。ばかなことをあちこちで言ってみんなでほほ笑めるように目指して、前へ歩んでいきましょう。こういった風に頑張り始めました。　<img src={bulbaDerp} className={'emote'} /> </p>
+
+    <p><span class="quote">だいじょうばない甘は日い者を呑みましょう!</span></p>
+
+    <p>という文章を詠んだら岩間は蟻間せんか。多くの人は有る低度缶汁でしょう。「あれ？」と違和せる琴歯で２📚 ５ の得食を味わうのが日本誤と良い 🔲 .</p>
+
+    <p>&nbsp;&nbsp;&nbsp;得食と家場、日本語で 🦌 できない琴歯遊びですね。感じが福吸うの初温を大票することや、同恩意義碁が宅算あることや、名刺可などの 〇〇可や勝様の生む。統べ手が日本誤の薬に経ちます。</p>
+
+    <p>他問えば日本語の「大丈夫」を日本誤に試用と 👅 ら。。<br />
+    <span class="quote">だいじょうばない<br />
+    小丈夫<br />
+    大上部<br />
+    🎲丈夫<br /></span>
+    と鳴ります <img src={TFA_ServiceBell} className={'emote'} /> <img src={bcaMoney5Slap} className={'emote'} /> <br />
+    &nbsp;&nbsp;&nbsp;行為った霊が揚げられると剃れ歩度子惑は内でしょう。同士可、異味で感じを買えること、初温で 🐸 こと、A5 や江模寺に刷ること。誰デモ３ 🦟 できる琴歯遊びですね。59不通のことを面黒く刷る 🎅 の人つ隣 🔲 。 <br />
+    嫌くに貝羽で切る用には編加を空く泣く ⬇️  り女子もこう缶しないことがお :auSus:  梅です。</p>
+
+    <p>以下が出酢か。日本語楽種の大ゴミに慣れそうだと重今線下。<br />
+    これが日本誤教師に鳴りたい渡しの離しです。</p>
+
+    <p>日本語はとても涼しいですね。冬の寒さに慣れるまで寒いダジャレを言い続けさせていただきます。寒さを口から出せますように 🌬️  💨 ❄️ <img src={TFA_BlueSparkles} className={'emote'} /> </p>
+
+    <p>ご itchy毒いただきあり 🥖  🍰 ございmuch.</p>
+
+    <p>ではでは。 <img src={yotsubaPray} className={'emote'} /> </p>
+  </div>
   </>
 )
 
 export const metadata = {
-  alias: 'Coda 小田📝（ただのこだだよ）',
-  username: 'Coda',
-  id: '199222214078365697',
+  alias: 'rei.on',
+  username: '00000.rei#4271',
+  id: '748008308799045653',
   index: 20,
   date: 'December 20',
   icon: icon

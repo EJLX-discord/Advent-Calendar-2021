@@ -1,32 +1,30 @@
-import icon from '../icons/メーヴェ.png'
+import icon from '../icons/default.png'
 
 export default (
   <>
-    <div>December 5th, 2020</div>
-    <div>
-      <p>Merry Christmas!<br/>At first, I&apos;m hoping you guys are having great holidays.</p>
-      <p>Lately I&apos;m having a lot of to do in my life. like, my gramma got dementia, also my job became really really busy for some reasons, even though I speak English every days with some of my friends on the VC.</p>
-      <p>My next year&apos;s resolutions are</p>
-      <ol>
-        <li>Speak/listen in English better than now.</li>
-        <li>Learn English way more accurate in some Univ.</li>
-        <li>Take the license, called &quot;1st class Qualified Certified Electrician&quot;.</li>
-        <li>Cherish my precious friend, also family, and gramma.</li>
-      </ol>
-      <p>3 of those resolutions were related by the COVID sadly...<br/>
-      But... I mean...</p>
-      <p>Everything definitely will be fine.<br/>At this moment, the entire world on fire. But STAY STRONG EVERYONE!!!!</p>
-      <p>After this COVID became better, let&apos;s hangout like good old days, hm??</p>
-      <p>Please take care for your healthy life, and make your year the best one next year!! friends!</p>
-      <p>Happy new year!!!!</p>
-    </div>
+  <div className={'jp'}>
+    2021年12月5日
+  </div>
+  <div className={'jp'}>
+    <p>みなさん、12月はどうお過ごしでしょうか？私は仕事なり勉強なり非常に忙しい時期になりましたが、社会人になってもユーチューブの視聴などをする時間があってよかったと思っています。ここ一年間何の変哲もない生活を送っていて面白いエピソードなどはなかったので、ノベルゲームとVチューバーの鑑賞で得た知識だけでどのくらい書けるかという検証を含め、普通の近況報告になります。作文に不慣れで敬語がしっかり身についていないので、何か間違いがあれば、指摘か訂正していただけると助かります。</p>
+
+    <p>本格的に日本語の勉強を初めて4年目となりますが、今年に入ってからリスニングを重視するようになり、聴解力のみならず、語彙力及び表現力が向上し、日本語でチャットする能力を習得することしか眼中になかった私にとってはリスニングの重要性に気づく期間でした。やはりネイティブレベルを目指すのであれば「読む・書く・聞く・話す」の4技能をバランスよく学習しなくてはならない、とあらためて思いした。</p>
+
+    <p>言語学習の成果に伴い、キャリアも順調に進んでいきました。友人の伝で新しいクライアントに出会い、高めのお給料で大学の学費も少し貯めることができました。来年から大学に入学する予定なのですが、専攻したい学問分野が言語学とは縁遠いので将来のための勉強、生業であるプログラミングの仕事と道楽にすぎない語学をどう並立させるかも一つの悩みです。</p>
+
+    <p>将来的には上手く行っていますが、最近は順風満帆とはいえないかもしれません。就職3日目、突然胃痛が起こり、それから毎朝胃痛で目が覚めるようになりました。医者に相談し、胃薬を処方されましたが、治まる様子もなく、治っている感じがしません。身体の痛みだけなら充分耐えられると思いましたが、結果的に不眠症にもなり、仕事に大きな影響を及ぼすようになり、非常に苦しい毎日が続いています。</p>
+
+    <p>しかし仕事でも日本語の勉強でもだんだん目標に近づいていき、このような逆境でも前向きになれる気がします。言語学習者の友人も、EJLXのみなさんも応援してくれていて、心が救われている感じです。あらためて感謝しています。</p>
+
+    <p>来年の目標としてはFJタグと、サーバー外でも日本人の友達を作ることです。陰キャでコミュ障である私には至難の業ですが、会話自体が本当に楽しく、とてもやりがいがあります。発音面でも色々な課題があり、ネイティブレベルとは掛け離れていますが、サーバーのみなさんと会話や音読をするようになり、目標は違っていても、共通の趣味を通し、他人と楽に話せるようになりました。言語交換という目的以外にも、そのような機会が増えてほしいと思っています。来年も、そしてこれからもお互いに頑張りましょう！</p>
+  </div>
   </>
 )
 
 export const metadata = {
-  alias: '',
-  username: 'メーヴェ',
-  id: '712819028053327926',
+  alias: 'kashi',
+  username: 'kashi',
+  id: '456226577798135808',
   index: 5,
   date: 'December 5',
   icon: icon

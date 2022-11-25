@@ -1,6 +1,6 @@
-# EJLX Advent Calendar 2020
+# EJLX Advent Calendar 2021
 
-The advent calendar is a yearly event on the EJLX server (discord invite is [here](https://discord.gg/japanese)). Applicants join on a first-come-first-server basis, and are assigned a certain day to post about anything. This website is an archive of all the entries submitted for 2020.
+The advent calendar is a yearly event on the EJLX server (discord invite is [here](https://discord.gg/japanese)). Applicants join on a first-come-first-server basis, and are assigned a certain day to post about anything. This website is an archive of all the entries submitted for 2021.
 
 However, if a person has trouble coming up with ideas for topics, the following guideline topics for this year are given:
 

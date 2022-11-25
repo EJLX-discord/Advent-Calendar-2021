@@ -1,46 +1,31 @@
-import icon from '../icons/chromaryu.png'
+import icon from '../icons/george.webp'
 
 export default (
   <>
-    <div>
-      = BEGIN ADVENT CALENDAR 2020/12/23 =
-    </div>
-    <div>
-      <p>I love programming (On whatever systems; like microcomputers, actual &quot;computers&quot;).<br/>
-      So I think I&apos;ll talk about it.</p>
-
-      <p>Pros about Microcomputers</p>
-      <ul>
-        <li>Microcomputers are fun to code, and can bring your code into material world.</li>
-        <li>Some of those microcomputers (Board or MPU or whatnot) are cheap enough that you can buy it below 10$</li>
-        <li>Many common interfaces that you don&apos;t find on ordinal PC. (SPI/I2C/USART etc...)</li>
-        <li>Some MCUs does have frameworks and manuals, and some snippets you can use</li>
-      </ul>
-
-      <p>Cons about Microcomputers</p>
-      <ul>
-        <li>Resources are limited.</li>
-        <li>Often, RAM, FLASH, ROM is limited; if you get 32K RAM consider those plenty :P</li>
-        <li>Documents can be tedious to read.</li>
-        <li>Some MCUs doesn&apos;t have consolidated manual nor framework</li>
-      </ul>
-
-      <p>here&apos;s some of my recommendations of MCU you can get.</p>
-      <ul>
-        <li>ESP32 - Espressif&apos;s 32-bit Core. comes with big flash and RAMs.</li>
-        <li>Seeduino series - Powerful 48MHz core.</li>
-        <li>Arduino Series - Uno and Mega. 8-bit but pincount and cheapness is good.</li>
-      </ul>
-
-      <p>That&apos;s it, for my advent calendar. (Also uh, DM me if you wanna more recommendation!)</p>
-    </div>
+  <div className={'jp'}>
+    <strong>アドベントカレンダー　2021年12月23日</strong>
+  </div>
+  <div className={'jp'}>
+    <p>皆さん、おはようございます！<br />
+    始まる前に僕は日本語があまり得意でないことをお知らせしておきます。もし間違いがあれば訂正してください。</p>
+    
+    <p>ジョージと申します。僕は26歳です。ニューイングランドに住んでいます。発電所で民間警備員になって3ヶ月です。その前に、7年間レジを担当していました。</p>
+    
+    <p>趣味はゲームすることです。僕は本を読んで、Vチューバーを見るのが好きです。ホロライブの獅白(ししろ)ぼたんは僕の一番好きなVチューバーです。ハリーポッターが一番好きな本です（僕はハッフルパフ、だから黄色いのイベントのロールをお願いします！）</p>
+    
+    <p>今年は4月から日本語の勉強を始めました。僕はまだ初心者だけど、毎日練習しています。長年、日本の文化やエンターテインメントが大好きだったので、ついにこの語学の勉強を始まることにしました。僕の主な目標は大好きなVチューバーにメッセージを送ることです。しかし、僕も人との出会いや友達作りたいと思っています。もうすで愛生さん、かずさん、すばるさん、みかんさん、ラファさん、その他にもたくさんの友達がいます。</p>
+    
+    <p>自己紹介を読んでいただきどうもありがとうございました！  来年はもっと日本語の勉強をするつもりです。頑張ります！みんなを、喜ばせたい！</p>
+    
+    <p>またね！ </p>
+  </div>
   </>
 )
 
 export const metadata = {
-  alias: '博麗の巫女(Haku)',
-  username: 'Chromaryu',
-  id: '135788476841852929',
+  alias: 'George【ジョージ】🔰',
+  username: 'Lordgeorge16#4656',
+  id: '131472592254009344',
   index: 23,
   date: 'December 23',
   icon: icon

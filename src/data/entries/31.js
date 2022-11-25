@@ -1,33 +1,45 @@
-import icon from '../icons/andacht.png'
-import image from '../images/31.jpg'
+import icon from '../icons/alexis.webp'
+import blobPeek from '../emotes/blobpeek.webp'
+import yotsubaSalute from '../emotes/yotsubaSalute.webp'
+import kusa from '../emotes/kusa.webp'
+import idontfeelsobad from '../emotes/dontfeelsobad.webp'
+import rooDerp from '../emotes/rooDerp.webp'
+import monkaS from '../emotes/monkaS.webp'
+import prettythumbsup from '../emotes/prettythumbsup.webp'
+import yotsubaYay from '../emotes/yotsubaYay.webp'
 
 export default (
   <>
   <div className={'jp'}>
-    アドベントカレンダー、12月31日
+    <strong>アドカレ 12月31日</strong>
   </div>
   <div className={'jp'}>
-    <p>明けましておめでとうございます。</p>
+    <p>みなさん、こんにちは！<br />
+    今日は、アドカレのイベントの最後の日です。ラスボスとして、将来の計画について書きたいと思っています。<img src={blobPeek} className={'emote'} /> </p>
 
-    <p>２０２０年の年末は驚いたことに来ました。コロナ流行病の陰に生き続けるみたいな感じは不安だったから来年に待っています。2月に新たに引っ越した家に慣れるながら突然に全国（アメリカに住めばもしかしてに全州）検疫が始ましたが、今までディスコードの友達と家族と話しているし、家にともに住んでいる人だけ合っています。</p>
+    <p>まずは、自己紹介の時間です。<br />
+    19歳の大学3年生フランス人です。外国語を3ヶ国語勉強しています。子供の頃から日本の文化 <span class="spoiler">ポケモンとかゼルダの伝説とか、しかもあの時は家族がホストファミリーでしたので多くの日本から大学生に出会いました</span>に興味がありました。というわけで、2017年に日本語の勉強を始まりました。<img src={yotsubaSalute} className={'emote'} /> </p>
 
-    <p>検疫のせいでコンサートを参加できなかったり、普通な仕事ができないけど、自分の日本語能力を段々に増すようとしていた。三ヶ月前に五本のSF小説が（間違いに）買ったから難読語に満ちている物語をゆっくりで読んでいる。新しい漢字や単語をそれぞれノートに書いていたのおかげで、もっと難しいことを読めるようになって気がする。それでも僕の文法はまた改良しなければならないと思います。</p>
+    <p>今は、フランス語が母国語ではない国でフランス語の教師になりたいと思います。日本でできればよかったですね。<img src={kusa} className={'emote'} /> <br />
+    とにかく、フランスで大学生3年生とは最後の年生です。そのため、来年は日本への旅行をしたいと思いますが、ウイルスの所為で多分できなくなります。<img src={idontfeelsobad} className={'emote'} /> <br />
+    日本に行けなくなって場合は、フランスでマスターに入ってみます。<img src={rooDerp} className={'emote'} /> </p>
 
-    <p>今年に折り紙モデルを折り続きまして、夏から冬まで自分の紙を作る機会は少ないでした。そのモデルの中では女性のようなバニーガール人形、怖い動物、すごく複雑な虫たちもあるけど、来年に暇になればもっと面白い折り紙の特別な紙を準備したい。写真は前に言ったバニーガール、でも自分の原作ではありません。チェン * シャオ（陈晓）という作家の人間をデザインするの才能はただの作家の中には無双です。チェンさんの本も買ったり、来年にすべてを折るつもりよ。ワクチンを受けたら来年に日本の探偵団折り紙コンベンションを参加できるかもしれない。</p>
+    <p>来年はもう一度運転免許証の試験に合格してみたいです。<img src={monkaS} className={'emote'} /> <span class="spoiler">すでに不合格しましたので</span></p>
 
-    <p>今回の年末は確かにパーティーを開けないが、明日友達と一緒に韓国のチキンフライを作る。残念ながらお正月の後で日本に旅行できることは無理でも、来年の休日は多くに蓄えた。だが、機会がない場合は新たな料理実験がいつも通りにできる。</p>
+    <p>最近は、日本語で「囚人リク」という漫画を読み始めました。最初の日本語で書かれている本です。難しいですが、EJLXのおかげで日本語能力はよく上がりましたのでわかります。何か理解できなければサーバーで聞くことができます。<img src={prettythumbsup} className={'emote'} /></p> 
 
-    <p>アドベントカレンダーを参加機会をくれてありがとうございました。よろしくねお願いします!</p>
+    <p>以上です。みなさん、ありがとうございます ! 来年もよろしくお願いします。英語や日本語の暢達への道、一緒に頑張りましょうね ! :bow3: </p>
+
+    <p>ボン・アネー・エ・ボン・サンテ <img src={yotsubaYay} className={'emote'} /></p>
   </div>
-  <img src={image} alt={'Origami Lady'} className={'entry-image'} />
   </>
 )
 
 export const metadata = {
-  alias: 'あやかしアンダハト',
-  username: 'Andacht',
-  id: '281217914483376128',
+  alias: 'Alexis',
+  username: 'd/Alexis#8015',
+  id: '294441472864944129',
   index: 31,
-  date: 'December 31 (New Years Eve)',
+  date: 'December 31',
   icon: icon
 }

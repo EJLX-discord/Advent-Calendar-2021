@@ -1,38 +1,41 @@
-import icon from '../icons/sei.png'
+import icon from '../icons/ayu.webp'
 
 export default (
   <>
-  <div className={'jp'}>
-    <u>アドベント・カレンダー</u><br/>
-    2020年12月16日（水）<br/>
-    最近のハマっていること
+  <div className={'en'}>
+    <strong>Advent Calendar 2021 December 16 (Thu)</strong>
   </div>
-  <div className={'jp'}>
-    <p>こんにちは、セイスイです。この度、このサーバーの恒例となったアドベントカレンダーに通して最近のハマっていることをちょっと話したいと思います。</p>
+  <div className={'en'}>
+    <p><u>1. Self-introduction</u><br />
+    Hello, everyone (woof woof)<br />
+    I’ll introduce myself for those who don’t know me. I’m ayumminu, and you can call me ayu.<br />
+    ( It's not important, but I'm thinking of changing my pfp, which I drew to a cuter doggo. )<br />
+    Do you remember why you participated in this server? I came here three and a half years ago to improve my English because of the link that was posted on Duolingo’s bulletin board. When I had been a puppy, I hadn’t studied English hard, which made it very difficult for me to communicate with people. Sadly, I only remembered that unnatural expressions like English that Japanese learn in junior high school.<br />
+    Also, the phrase “I was born”, which I learned in an English song didn’t stuck in my head for some reason. For these reasons,  I've been through various difficulties for studying English.<br />
+    To put who am I in one word, a doggo that has been studying English.</p>
 
-    <p>それでは、何にハマっているかというと、AKBグループ＆坂道シリーズのことです。このきっかけは数ヶ月前の話になるんですけど、８月にネットでredditを見ながらAKBINGOというバラエティー番組に出会いました。そしてどういう番組なのか、ちょっと興味を湧かせられたので、見てみました。最初は一日に数話しか見ていなかったんですけど、見れば見るほど面白くなっていて、どんどん次の回を見たくなりました。そこから、毎日２０話以上を見るようにしました。この番組は６００話以下あるので、一ヶ月半くるいで見終わりました。内容として、AKB48にいるメンバーたちが色んなゲームと企画をやったりして、罰ゲームとか、正直将棋とか、私服ファッションとか、手相からラッキーガールズランキングとか、ドッキリされたりとか、無茶振りドッジボールとか、とにかく色んな面白い企画をやったので、すごく面白いです。</p>
+    <p><u>2. About 2020</u><br />
+    A sad event for me happened in 2020. It was the saddest event ever happened in my entire life. And I've stopped using discord for about two months. At the same time, I’ve stopped studying English. The about two month later, I stared using discord again, but I was very emotionally unstable. If it could be described, it would be dark days that made me feel like I didn't care about my own money.<br />
+    2020 was the year that the covid-19 was going around in Japan than at present. Do you remember what you were doing? Actually, I’ve worked remotely from April of 2020 to August of 2021. At this time,I felt more comfortable that I didn't have to talk to people face-to-face because I was be in gloomy mood. Then, this self-quarantine period had positive effects to rest my mind. Working remotely that I didn't have to commute to work was very good for me.<br />
+    One day, I noticed that I hadn’t studied English in about six months. You would think six months were a long period but I didn't feel like it would be that long. And you would know what happened if a doggo that only could remember unnatural English or “I was born” didn't study English for six months. I thought I needed to study English again step by step.<br />
+    In summary, last year was a necessary and important period to be considerate myself.</p>
 
-    <p>面白い企画以外にも他の要素でAKBINGOもAKB48も好きになりました。他の要素というと、AKB48のメンバーたちです。AKB48はたぶん世界一番メンバーが多いアイドルグループ、１００人以上もいるので、色んなキャラがいて、それぞれのメンバーが個性があって面白いです。たとえば柏木由紀というアイドルはリアクション女王と称されて、理由はその通り、リアクションがものすごく面白いからです。例をあげれば、オナラ空気砲の罰ゲームを受けたんですけど、オナラ空気を嗅いだとたん、叫んで倒れたんです。そのリアクションはすごく面白くて、名シーンとなりました。ユーチューブでも検索すれば見られます。柏木由紀の他のリアクションも面白いので見るたびに爆笑しました。他の面白いメンバーもいるんですけど、全部を話すと長すぎなるので、遠慮しておきます。次に、もともとはアイドルだから、ダンスと歌を歌うのはメインなので、AKBINGOで歌とダンスを披露するたびに輝いているようですごく魅力だなと思います。それで、AKB48の歌も聞き始めました。ちなみに私の推しは松井珠理奈です。なお、好きな曲は「大声ダイヤモンド」です。</p>
+    <p><u>3. About 2021 and My New Year's Resolution</u><br />
+    For me, 2020 was so blank year, that 2021 is the year I restarted. First of all, practicing easy English words everyday motivated me to try harder. Next, my failure to understand English grammar inspired me to study more. (As a matter of fact, I should practice it because even now I don't know well it ) In short, the study time has increased compared to 2020.</p>
 
-    <p>AKBINGOを見て一番得たことは日本語の勉強になりました。バラエティー番組なので、アニメとドラマと違って台本がなくてずっと自然な日本語を喋っています。それで、日本人が実際に使っている言葉とか表現とかを取得ことができました。さらに、名前の読み方ずっと分からなくて、でもこの番組でメンバーたちがいつでも名札付けていて、名前もいつも呼んでいるので、名前の読み方も少しずつ覚えることができました。日本のことももっと知ることができました。例えば、成人式と七五三のこと、おせち料理と和食のこと、それぞれの都道府県のことも。</p>
+    <p>Lately, I feel full of eagerness to try to do things I haven't experienced yet.<br />
+    I'm going to accumulate knowledge while enjoying this new normal life style.</p>
 
-    <p>好きなメンバーが多くてツイッターとインスタでフォローしています。それでツイッターとインスタを見るたびに日本語を読む練習もできます。ひいては、メンバーのブログも読んでいます。ユーチューブチャンネルを開設した元メンバーと現役メンバーが多くて、ほぼ毎日アップした動画を見ていて、また勉強になります。なお、ラジオ番組もたくさんやっているそうなので、お風呂に入っている時に聞いています。</p>
-
-    <p>AKBINGOを見終わった後に他のAKB関連番組を検索して、たくさんを見つかったので、全部を見ようとしています。例えば他のライバルと姉妹グループがBINGOシリーズもあるので、NOGIBINGOとかHKTBINGOとか、それらをもう全部見ました。その上、SKE48 エビショー、HaKaTa百貨店、AKB チーム8のブンブン!エイト大放送などなど、もう見終わりました。</p>
-
-    <p>ちなみに今は「欅って、書けない?」という番組を見ています。これは欅坂４６（最近改名されたので今は櫻坂４６と知られています）という坂道シリーズのアイドルグループのバラエティー番組です。そして、私の一番好きなアイドルグループです。なぜ一番好きかというと、一人一人のメンバーが溢れている個性を持っていて、魅力さでも面白さでもあります。そして、メンバーたちに対する友情、グループ自体に対する熱意、グループに貢献できるように頑張っている姿、全部が魅了されました。その上、他のアイドルグループは大体アイドルっぽく、元気を与えるような曲しかないけど、でもそれと違って、欅坂４６の曲がほぼザ・アーティスト系です。ダンスも普通のアイドルのかわいいダンスと違って、結構激しくてパワフルです。ちなみにこのグループの推しは原田葵です。一番好きな曲は「ガラスを割れ!」です。</p>
-
-    <p>他の得たことは日本のお笑いをもっと深くに理解できました。AKB関連の番組のMCは概ねお笑い芸人がやっています。なので、日本のお笑いの基本となっているツッコミとボケを学ぶことができて、お笑いの大喜利、漫才、コント、リズム系などの種類も学びました。後は、メンバーたちがいつも他のお笑い芸人のモノマネや一発ギャグをやっているので、こういうものの面白さも楽しんでいます。時々お笑い芸人がゲストとして番組で登場するので、どんどんお笑い芸人界に誰がいるのかを知ることもできています。ちなみに好きなお笑い芸人はサンドウィッチマンというコンビです。</p>
-
-    <p>最近のハマっていることでした。日本のアイドルのこともお笑いのことも、もっと深く知れて楽しめるのは嬉しいです。ちょっと長くなったんですけど、読んでいただいた皆さん、ありがとうございます。</p>
+    <p>Finally, thank you for reading my Advent Calendar!<br />
+    It was difficult to type with my paws🦮</p>
   </div>
   </>
 )
 
 export const metadata = {
-  alias: '',
-  username: 'Sei 静水 (セイスイ)',
-  id: '687401005972848676',
+  alias: 'ayumminu',
+  username: 'ayumminu#5449',
+  id: '473013785884622848',
   index: 16,
   date: 'December 16',
   icon: icon
