@@ -3,7 +3,7 @@ import icon from '../icons/sakkaku.webp'
 export default (
   <>
   <div className={'jp'}>
-    アドベントカレンダー　2021年12月29日
+    アドベントカレンダー{'　'}2021年12月29日
   </div>
   <div className={'jp'}>
     <p>このサーバーに参加してから一年もたっていないけど、何か書かせてもらう。<br />

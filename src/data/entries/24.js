@@ -6,7 +6,7 @@ import image2 from '../images/24-2.png'
 export default (
   <>
   <div className={'jp'}>
-    <strong>アドベントカレンダー　2021年12月24日</strong>
+    <strong>アドベントカレンダー{'　'}2021年12月24日</strong>
   </div>
   <div className={'jp'}>
     <p>みなさん、お待たせしました。</p>

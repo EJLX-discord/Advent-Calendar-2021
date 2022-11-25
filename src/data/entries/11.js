@@ -1,6 +1,5 @@
 import icon from '../icons/zabela.webp'
 
-
 export default (
   <>
   <div className={'jp'}>

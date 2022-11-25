@@ -11,7 +11,6 @@ import particleOptions from './particles.json'
 import particleBackOptions from './particles-back.json'
 import { useState, useEffect } from 'preact/hooks'
 
-
 // Overwrites function used by particle.js that uses deprecated variables
 Object.deepExtend = function deepExtendFunction (destination, source) {
   for (const property in source) {

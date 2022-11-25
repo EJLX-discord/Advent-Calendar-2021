@@ -14,27 +14,27 @@ export default (
     Of course , there will be various requests depending on. <br />
     I would like to write some foods what I wanna recommend to my friend in Japan. </p>
 
-    <p>① curry bread <span class="spoiler">(カレーパン)</span><br />
+    <p>① curry bread <span className="spoiler">(カレーパン)</span><br />
     There are many kind of types<br />
     fried in oil like a donut , it like baking in the oven , and so on. <br />
     I think Japanese curry and bread go very well. </p>
 
-    <p>②Takoyaki <span class="spoiler">(たこ焼き)</span><br />
+    <p>②Takoyaki <span className="spoiler">(たこ焼き)</span><br />
     Everyone loves Japanese takoyaki. I hope so <img src={yotsubaYay} className={'emote'} /> <br />
-    If you are biginner of takoyaki , please try to look for where you can line up like <span class="spoiler">”銀だこ” ”くくる”</span> and so on. There are many taste good takoyaki at convenience stores and supermarket side dish corners. <br />
-    If you are advanced of takoyaki ,please try to eat Akashiyaki <span class="spoiler">明石焼き</span><br />
+    If you are biginner of takoyaki , please try to look for where you can line up like <span className="spoiler">”銀だこ” ”くくる”</span> and so on. There are many taste good takoyaki at convenience stores and supermarket side dish corners. <br />
+    If you are advanced of takoyaki ,please try to eat Akashiyaki <span className="spoiler">明石焼き</span><br />
     The dough of Akashiyaki is softer than takoyaki.  That is eat with Dashi     soup stock ?🧐</p>
 
-    <p>③Strawberry short cake <span class="spoiler">(イチゴショートケーキ🍰)</span></p>
+    <p>③Strawberry short cake <span className="spoiler">(イチゴショートケーキ🍰)</span></p>
 
     <p>Anyway , I love it. 😋 <br />
     There are variety strawberry cakes in Japan <br />
     Convenience stores , big cake shops , small cake shops. <br />
-    If you are super rich person , please go to ”SATSUKI” at Hotel New Otani. It's very expensive , but it's very delicious.  😋 Super one is maybe over 3000yen for one piece , but I remembered there were some kind of cheaper one. </p>
+    If you are super rich person , please go to ”SATSUKI” at Hotel New Otani. It&apos;s very expensive , but it&apos;s very delicious.  😋 Super one is maybe over 3000yen for one piece , but I remembered there were some kind of cheaper one. </p>
 
-    <p>④Umaka stick <span class="spoiler">(うまか棒)</span></p>
+    <p>④Umaka stick <span className="spoiler">(うまか棒)</span></p>
 
-    <p>It's Japanese snacks.  There are many kinds of taste, for example <br />
+    <p>It&apos;s Japanese snacks.  There are many kinds of taste, for example <br />
     the taste of corn potage , <br />
     They are 10yen per piece</p>
 

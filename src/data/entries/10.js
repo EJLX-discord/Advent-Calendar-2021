@@ -3,7 +3,6 @@ import lul from '../emotes/lul.webp'
 import pekoraSalute from '../emotes/pekoraSalute.webp'
 import image from '../images/10.png'
 
-
 export default (
   <>
   <div className={'en'}>
@@ -20,7 +19,7 @@ export default (
     They started with the Pokémon Red and Green then Blue and Yellow came afterwards.<br />
     Though unfortunately Pokémon Green’s international version wasn’t released.<br />
     But here’s the interesting part. They actually chose the colour red and green after the world’s most known plumbers. Yes, Mario and Luigi. Not really a mind-blowing fact but it’s pretty cool knowing that Mario actually took part in the game.</p>
-    
+
     <p>What’s more, the title <i>Pokémon…</i> <strong>Pocket Monsters</strong> itself has an interesting origin too.<br />
     The name was originally named <i>Capsule Monsters</i> which was inspired by <strong>gashapons</strong>. However, <i>capsule</i> was already trademarked which made things complicated so they decided to change the name.  One of the developers blurted out “these balls(currently pokéball/monster ball in jp) can be put in a coat pocket etc… hmmm“ and everyone liked that thought and finally agreed on naming it Pocket Monsters(Pokémon for the international version because the word Pocket Monster was a lewd slang).</p>
 

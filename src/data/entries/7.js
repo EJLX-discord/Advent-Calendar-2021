@@ -3,7 +3,7 @@ import icon from '../icons/daze.webp'
 export default (
   <>
   <div className={'jp'}>
-    <strong>２０２１年　アドカレ７</strong>
+    <strong>２０２１年{'　'}アドカレ７</strong>
   </div>
   <div className={'jp'}>
     <p>こんにちは、皆さん！<br />
@@ -22,8 +22,8 @@ export default (
     <p>このいい季節にいいことをしましょう。短めだったが、読んでくれてありがとうございます。それじゃ、残りの２０２１年をごゆっくりお過ごしください！<br />
     詳しい情報は下記のリンクでございますのでチェックしていただけると幸いです。</p>
 
-    <p><a target="_blank" href="https://teamseas.org/">https://teamseas.org/</a><br />
-    <a target="_blank" href="https://www.youtube.com/watch?v=cV2gBU6hKfY&ab_channel=MrBeast0">https://www.youtube.com/watch?v=cV2gBU6hKfY&ab_channel=MrBeast0</a></p>
+    <p><a target="_blank" rel="noreferrer" href="https://teamseas.org/">https://teamseas.org/</a><br />
+    <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=cV2gBU6hKfY&ab_channel=MrBeast0">https://www.youtube.com/watch?v=cV2gBU6hKfY&ab_channel=MrBeast0</a></p>
 
     <p>(注)検索する場合は「Team Seas」って検索してください。「チーム海」という名前は僕が勝手に日本語で書いたことだけです。</p>
   </div>
