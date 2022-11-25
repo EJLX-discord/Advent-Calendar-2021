@@ -1,5 +1,5 @@
 import icon from '../icons/segu.gif'
-// import audio from '../audio/segu.mp3'
+import audio from '../audio/segu.mp3'
 
 export default (
   <>
@@ -24,7 +24,7 @@ export default (
     <p>良いお年を。</p>
   </div>
   <audio controls>
-    {/* <source src={audio} type="audio/mpeg" /> */}
+    <source src={audio} type="audio/mpeg" />
   </audio>
   </>
 )

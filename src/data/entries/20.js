@@ -1,5 +1,5 @@
 import icon from '../icons/reion.webp'
-// import audio from '../audio/reion.mp3'
+import audio from '../audio/reion.mp3'
 import yotsubaPray from '../emotes/yotsubaPray.webp'
 import pikaoh from '../emotes/pikaoh.webp'
 import rooGentleman from '../emotes/rooGentleman.webp'
@@ -35,7 +35,7 @@ export default (
     <p>＊関心、という言葉は中国語で「世話をする」や「お気遣い」などの意味もあります。</p>
     ～～～～～
     <p><audio controls>
-    {/* <source src={audio} type="audio/mpeg" /> */}
+    <source src={audio} type="audio/mpeg" />
     </audio></p>
 
     <p>これからその時に生み出した日本語の楽しみ方を 🤏  少しだけご紹介させていただきます。<img src={rooGentleman} className={'emote'} /> </p>

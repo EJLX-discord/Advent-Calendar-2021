@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "animejs": "^3.2.1",
+    "file-loader": "^6.2.0",
     "preact": "^10.1.0",
     "preact-render-to-string": "^5.1.2",
     "tsparticles": "^1.18.11",
