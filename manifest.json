@@ -1,7 +1,7 @@
 {
-  "name": "EJLX Advent Calendar 2020",
-  "short_name": "EJLX AC 2020",
-  "start_url": "Advent-Calendar-2020/",
+  "name": "EJLX Advent Calendar 2021",
+  "short_name": "EJLX AC 2021",
+  "start_url": "Advent-Calendar-2021/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",

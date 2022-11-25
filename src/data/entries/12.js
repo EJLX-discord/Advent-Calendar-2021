@@ -1,5 +1,5 @@
-import icon from '../icons/zabela.webp'
-import audio from '../audio/oaxith.mp3'
+import icon from '../icons/oaxith.webp'
+// import audio from '../audio/oaxith.mp3'
 
 export default (
   <>
@@ -8,9 +8,11 @@ export default (
   </div>
   <div className={'jp'}>
     <p>私のエントリーは録音になります！ぜひ聞いて下さい！（ヘッドフォンを推奨します）<br />
-    録音とスクリプトに相違が出たので、内容を合わせてからcorrect_meの方で投稿します。</p>
+    録音とスクリプトに相違が出たので、内容を合わせてから#correct_meの方で投稿します。</p>
   </div>
-    audio
+  <audio controls>
+    {/* <source src={audio} type="audio/mpeg" /> */}
+  </audio>
   </>
 )
 

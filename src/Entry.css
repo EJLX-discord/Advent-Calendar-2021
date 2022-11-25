@@ -145,3 +145,22 @@
 	color: #aaa;
 	font-size: 0.95em;
 }
+
+.spoiler {
+  background-color: rgb(41, 41, 41);
+  color: transparent;
+  user-select: none;
+  border-radius: 3px;
+}
+
+.spoiler:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.quote{
+  padding-left: 1em;
+  border-left: 4px solid gray ;
+  position: relative;
+  display:block;
+}
