@@ -1,4 +1,4 @@
-import icon from '../icons/ayu.webp'
+import icon from '../icons/waon.png'
 
 export default (
   <>
