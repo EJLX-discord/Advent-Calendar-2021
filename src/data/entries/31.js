@@ -7,6 +7,7 @@ import rooDerp from '../emotes/rooDerp.webp'
 import monkaS from '../emotes/monkaS.webp'
 import prettythumbsup from '../emotes/prettythumbsup.webp'
 import yotsubaYay from '../emotes/yotsubaYay.webp'
+import bow3 from '../emotes/bow3.webp'
 
 export default (
   <>
@@ -28,7 +29,7 @@ export default (
 
     <p>最近は、日本語で「囚人リク」という漫画を読み始めました。最初の日本語で書かれている本です。難しいですが、EJLXのおかげで日本語能力はよく上がりましたのでわかります。何か理解できなければサーバーで聞くことができます。<img src={prettythumbsup} className={'emote'} /></p> 
 
-    <p>以上です。みなさん、ありがとうございます ! 来年もよろしくお願いします。英語や日本語の暢達への道、一緒に頑張りましょうね ! :bow3: </p>
+    <p>以上です。みなさん、ありがとうございます ! 来年もよろしくお願いします。英語や日本語の暢達への道、一緒に頑張りましょうね ! <img src={bow3} className={'emote'} /></p>
 
     <p>ボン・アネー・エ・ボン・サンテ <img src={yotsubaYay} className={'emote'} /></p>
   </div>
